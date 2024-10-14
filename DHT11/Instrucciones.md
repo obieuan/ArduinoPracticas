@@ -19,7 +19,7 @@ Los alumnos se familiarizarán con el sensor DHT11/DHT22 realizando actividades 
 
 ## 4. Introducción Teórica
 El DHT11 y el DHT22 son sensores que miden tanto la temperatura como la humedad ambiental. El DHT22 es más preciso y tiene un rango de medición mayor que el DHT11, pero ambos funcionan de manera similar en términos de uso con Arduino.
-![1][Diagrama/1.jpg]
+![1](Diagrama/dht1.jpg)
 
 **Características del DHT11:**
 - Rango de Temperatura: 0-50 °C, precisión ±2 °C.
@@ -37,7 +37,8 @@ Estos sensores son ampliamente usados en sistemas IoT para controlar ambientes, 
   - GND → GND en Arduino.
   - DATA → Pin digital 2 en Arduino.
 
-Consulta el archivo [`diagrama_dht11_dht22.png`](Diagrama/diagrama_dht11_dht22.png) para el esquemático detallado.
+![2](Diagrama/dht2.jpg)
+![3](Diagrama/dht3.jpg)
 
 ## 6. Actividades Prácticas
 

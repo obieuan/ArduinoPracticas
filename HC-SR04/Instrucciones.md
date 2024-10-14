@@ -36,7 +36,6 @@ El uso de sensores ultrasónicos es común en aplicaciones IoT para monitorear d
   - TRIG → Pin digital 2 en Arduino.
   - ECHO → Pin digital 3 en Arduino.
 
-Esquemático:
 ![1](Diagrama/1.jpg)
 ![2](Diagrama/2.jpg)
 

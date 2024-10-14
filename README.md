@@ -1,42 +1,66 @@
-# Arduino Varied Codes
 
-## Overview
-This repository contains a collection of Arduino sketches for various laboratory practices and projects. The sketches demonstrate the use of sensors, modules, and various electronics components typically used in educational and research settings. These projects are intended to facilitate learning and experimentation with Arduino, covering a wide range of topics such as sensor data acquisition, signal processing, motor control, and more.
+# Repositorio de Prácticas de Arduino
 
-## Prerequisites
-To successfully run the sketches in this repository, you'll need the following:
-- **Arduino IDE**: Install the latest version of the Arduino IDE. You can download it from [here](https://www.arduino.cc/en/software).
-- **Arduino Board**: Compatible boards include Arduino Uno, Mega, Nano, or any other variant.
-- **Components**: Each project specifies the required components such as sensors (e.g., optical sensors, temperature sensors), actuators (e.g., motors, relays), and other electronic modules.
+Este repositorio contiene una colección de prácticas diseñadas para enseñar a los estudiantes a trabajar con diversos sensores, actuadores y módulos en Arduino. Cada carpeta en el repositorio corresponde a un dispositivo específico, como sensores de temperatura, motores, pantallas LCD, y módulos de comunicación, entre otros.
 
-## Project Structure
-The repository is structured into different folders, each representing a specific project or practice. Each folder contains:
-- A **`README.md`** with a description of the project.
-- The **Arduino sketch** (`.ino` file) for the project.
-- A **circuit diagram** (if applicable) in `.png` or `.pdf` format.
-- Any **external libraries** required by the sketch.
+## Estructura del Repositorio
 
-### Example Projects
+Cada dispositivo tiene su propia carpeta que sigue una estructura estándar para organizar el código, diagramas, documentación y las instrucciones de la práctica. A continuación se describe la estructura general de cada carpeta:
 
-#### 1. RPM Measurement using FC-03 Optical Sensor
-- **Description**: Measures the RPM of a rotating object using an FC-03 optical sensor. The sensor detects pulses as slots on a rotating disk pass through the sensor, and the code calculates the RPM based on the pulse frequency.
-- **Components**: FC-03 Optical Sensor, Arduino Board, Rotating Disk.
-- **Learning Outcomes**: Understand the use of interrupts, pulse counting, and sensor integration with Arduino.
+```
+/Dispositivo
+│
+├── /Codigo
+│   └── Archivos .ino para la programación de Arduino.
+│
+├── /Diagrama
+│   └── Imágenes o esquemas que muestran las conexiones o diagramas relevantes.
+│
+├── /Documentos
+│   └── Documentos PDF u otros archivos adicionales relevantes a la práctica.
+│
+└── Instrucciones.md
+    └── Archivo en formato Markdown que contiene la descripción detallada de la práctica, 
+        objetivos, materiales, instrucciones paso a paso, preguntas de análisis y conclusiones.
+```
 
-#### 2. Temperature Monitoring with DHT11
-- **Description**: Reads the ambient temperature and humidity using a DHT11 sensor and displays the values on the serial monitor.
-- **Components**: DHT11 Temperature Sensor, Arduino Board.
-- **Learning Outcomes**: Learn how to interface with temperature and humidity sensors, and process sensor data in real-time.
+## Lista de Prácticas
 
-#### 3. DC Motor Speed Control with PWM
-- **Description**: Uses pulse-width modulation (PWM) to control the speed of a DC motor.
-- **Components**: DC Motor, L298N Motor Driver, Arduino Board.
-- **Learning Outcomes**: Learn how to use PWM to control motor speed and integrate motor drivers with Arduino.
+El repositorio incluye las siguientes prácticas:
 
-### External Libraries
-Some projects may require additional Arduino libraries. You can install these via the Arduino Library Manager or manually from the respective GitHub repositories. Instructions for installing these libraries are included in each project folder's `README.md`.
+1. **Bluetooth HC05**: Comunicación inalámbrica con un dispositivo móvil mediante el módulo Bluetooth HC05.
+2. **DHT11**: Medición de temperatura y humedad utilizando el sensor DHT11.
+3. **Encoder FC-03**: Uso de un encoder para medir la rotación y velocidad angular.
+4. **HC-SR04**: Medición de distancias utilizando el sensor de ultrasonido HC-SR04.
+5. **KY-022**: Control de dispositivos mediante señales infrarrojas.
+6. **LDR**: Medición de intensidad lumínica con un sensor LDR.
+7. **LM35**: Medición de temperatura utilizando el sensor LM35.
+8. **Motor a pasos**: Control de un motor a pasos utilizando el driver ULN2003.
+9. **Pantalla LCD**: Mostrar información en una pantalla LCD controlada por Arduino.
+10. **Servo SG90**: Control de un servomotor utilizando señales PWM.
 
-### Usage
-1. **Clone the repository**: 
-   ```bash
-   git clone https://github.com/your-repository/arduino-varied-codes.git
+Cada práctica está diseñada para que los estudiantes puedan seguir instrucciones claras y completas, desde las conexiones de los componentes hasta la programación en Arduino.
+
+## Uso del Repositorio
+
+1. Clona este repositorio en tu máquina local:
+   ```
+   git clone https://github.com/usuario/ArduinoPracticas.git
+   ```
+
+2. Navega a la carpeta del dispositivo con el que vas a trabajar:
+   ```
+   cd LDR
+   ```
+
+3. Abre el archivo `Instrucciones.md` en tu editor de preferencia para seguir los pasos de la práctica.
+
+4. Carga el código desde la carpeta `/Codigo` en el Arduino IDE y sube el programa a tu placa.
+
+## Contribuciones
+
+Si deseas mejorar este repositorio o agregar nuevas prácticas, no dudes en hacer un fork y enviar un pull request. Agradecemos tus contribuciones.
+
+## Contacto
+
+Si tienes alguna pregunta o sugerencia, puedes contactarme en [obieuan@gmail.com].
